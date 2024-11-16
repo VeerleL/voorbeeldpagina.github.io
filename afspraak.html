@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tandartspraktijk Kieskeurig</title>
+</head>
+<body>
+<h1>Tandartsafspraak</h1>
+
+
+
+<p>Bij een eerste bezoek krijgt u een aantal vragen voorgelegd die betrekking hebben op uw persoonlijke, medische en tandheelkundige gegevens. Als u bepaalde medicijnen gebruikt, is het van belang dat u over de namen en de doseringen beschikt.
+
+    Tijdens het eerste bezoek zal een mondonderzoek plaatsvinden en worden er röntgenfoto's gemaakt. Zo kunnen wij een duidelijk beeld schetsen over de staat van uw gebit. Ook met alle mogelijke vragen kan u op dat moment terecht.</p>
+<figure>
+    <img src="Tandartsfoto1.jpg"
+    alt="Lachende tandarts" title="Lachende tandarts" width="300">
+    <img src="Tandartsfoto2.jpg"
+    alt="Tevreden patiënt" title="Tevreden patiënt" width="300">
+    <img src="Tandartsfoto3.jpg"
+    alt="Tandarts bezig met mondonderzoek" title="tandarts bezig met mondonderzoek" width="300">
+</figure>
+   
+ <form
+    id="contactform"
+  action="https://formspree.io/f/xrbgkvrl"
+  method="POST"
+> 
+
+<form> 
+<fieldset>
+    <legend>Persoonlijke gegevens</legend>
+    <br>
+    <label for="naam">Naam:</label>
+    <input id="naam" type="text" name="naam"><br><br>
+    <label for="voornaam">Voornaam:</label>
+    <input id="voornaam" type="text" name="voornaam"><br><br>
+    <input type="radio" name="geslacht" value="man" checked>Man
+    <input type="radio" name="geslacht" value="vrouw">Vrouw
+    <input type="radio" name="geslacht" value="anders">Anders <br><br>
+    <label for="adres">Adres:</label>
+    <input type="text" id="adres" name="adres"><br><br>
+    <label for="postcode">Postcode:</label>
+    <input type="text" id="postcode" name="postcode"><br><br>
+    <label for="woonplaats">Woonplaats:</label>
+    <input type="text" id="woonplaats" name="woonplaats"><br><br>
+    <label for="tel">Telefoonnummer:</label>
+    <input type="number" id="telefoonnummer" name="telefoonnummer"><br><br>
+</fieldset>
+<br><br>
+<fieldset>
+    <legend>Beschrijving van de klachten</legend>
+    <br>
+    <input type="checkbox" name="Mogelijke klachten"
+    value="Pijn">Pijn<br><br>
+    <input type="checkbox" name="Mogelijke klachten"
+    value="Jaarlijks onderzoek">Jaarlijks onderzoek<br><br>
+    <input type="checkbox" name="Mogelijke klachten"
+    value="Vulling verloren">Vulling verloren<br><br>
+    <input type="checkbox" name="Mogelijke klachten"
+    value="Urgente tandartsafspraak">Urgente tandartsafspraak <br><br>
+
+    <label for="Fotobestand">Voeg een fotobestand toe</label>
+    <input type="file" id="fotobestand" name="fotobestand"><br><br>
+</fieldset>
+<br><br>
+<fieldset>
+<legend>Toelichting van de klachten</legend>
+<br>
+<input type="hidden" name="_subject" value="Website contact"/>
+    <textarea name="message" placeholder="Uw bericht" max="1500"></textarea>
+    <br><br>
+    <label for="datum">Gewenste datum:</label>
+    <input type="date" name="datum" max="2080-12-31">
+</fieldset>
+<br><br>
+<input type="submit" value="Verzend">
+</form>
+</body>
+</html>
